@@ -59,7 +59,7 @@ Plugin 'Shougo/neomru.vim'
 Plugin 'bronson/vim-trailing-whitespace'
 Plugin 'prettier/vim-prettier'
 Plugin 'junegunn/goyo.vim'
-
+Plugin 'reireias/vim-cheatsheet'
 " linting
 Plugin 'vim-scripts/AnsiEsc.vim'
 
@@ -153,6 +153,11 @@ autocmd QuickFixCmdPost *grep* cwindow
 
 " ステータス行に現在のgitブランチを表示する
 set statusline+=%{fugitive#statusline()}
+
+"----------------------------------------------------------
+" vim-cheatsheet settings
+"----------------------------------------------------------
+let g:cheatsheet#cheat_file = '~/dotfiles/.cheatsheet.md'
 
 "key mapping
 nnoremap <Space>w : <C-u>write<Cr>
