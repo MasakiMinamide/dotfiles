@@ -75,7 +75,7 @@ autocmd FileType typescript setlocal formatprg=prettier\ --parser\ typescript
 " molokai settings
 "----------------------------------------------------------
 colorscheme molokai
-set t_Co=256
+set t_Co=206
 syntax enable
 
 set laststatus=2
