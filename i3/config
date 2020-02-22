@@ -66,6 +66,7 @@ bindsym $mod+Shift+i exec --no-startup-id $editor --name "__nmtui" -e "nmtui-con
 # start a browser
 bindsym $mod+Shift+w		exec --no-startup-id brave
 bindsym $mod+Shift+m		exec --no-startup-id com.spotify.Client
+bindsym $mod+Shift+a    exec --no-startup-id atom
 # start a terminal
 bindsym Mod1+Return exec terminator
 bindsym Mod1+shift+Return exec terminator
@@ -166,6 +167,7 @@ bindsym Mod1+0 workspace $ws10
 
 assign [class="Terminator"] $ws1
 assign [class="Brave-browser"] $ws2
+assign [class="Atom"] $ws3
 assign [class="TelegramDesktop"] $ws4
 assign [class="Slack"] $ws4
 # assign [class="Spotify"] $ws10
@@ -309,16 +311,16 @@ exec --no-startup-id fcitx -d
 # bindsym $mod+Shift+plus		exec --no-startup-id amixer sset Master 15%+ && pkill -RTMIN+10 i3blocks
 # bindsym $mod+minus 		exec --no-startup-id amixer sset Master 5%- && pkill -RTMIN+10 i3blocks
 # bindsym $mod+Shift+minus	exec --no-startup-id amixer sset Master 15%- && pkill -RTMIN+10 i3blocks
-bindsym $mod+less 		exec --no-startup-id mpc prev
-bindsym $mod+Shift+less		exec --no-startup-id mpc seek 0%
-bindsym $mod+greater		exec --no-startup-id mpc next
-bindsym $mod+Shift+greater	exec --no-startup-id mpc next
+# bindsym $mod+less 		exec --no-startup-id mpc prev
+# bindsym $mod+Shift+less		exec --no-startup-id mpc seek 0%
+# bindsym $mod+greater		exec --no-startup-id mpc next
+# bindsym $mod+Shift+greater	exec --no-startup-id mpc next
 
 # For advancing forward/backward in an mpd song
-bindsym $mod+bracketleft 	exec --no-startup-id mpc seek -10
-bindsym $mod+Shift+bracketleft 	exec --no-startup-id mpc seek -120
-bindsym $mod+bracketright 	exec --no-startup-id mpc seek +10
-bindsym $mod+Shift+bracketright exec --no-startup-id mpc seek +120
+# bindsym $mod+bracketleft 	exec --no-startup-id mpc seek -10
+# bindsym $mod+Shift+bracketleft 	exec --no-startup-id mpc seek -120
+# bindsym $mod+bracketright 	exec --no-startup-id mpc seek +10
+# bindsym $mod+Shift+bracketright exec --no-startup-id mpc seek +120
 
 # #---Extra XF86 Keys---# #
 bindsym XF86AudioMute		exec --no-startup-id amixer sset Master toggle && pkill -RTMIN+10 i3blocks
@@ -359,7 +361,6 @@ bindsym XF86AudioRewind		exec --no-startup-id mpc seek -10
 bindsym XF86AudioForward	exec --no-startup-id mpc seek +10
 ##bindsym XF86Phone		exec
 ##bindsym XF86Tools		exec
-bindsym XF86HomePage		exec $BROWSER https://lukesmith.xyz
 bindsym XF86Reload		restart
 ##bindsym XF86ScrollUp		exec
 ##bindsym XF86ScrollDown		exec
