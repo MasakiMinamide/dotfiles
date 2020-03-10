@@ -1,1 +1,0 @@
-/home/masaki/.i3
